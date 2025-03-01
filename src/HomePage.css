@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: rgb(17, 26, 0);
+    padding: 65px;
+    padding-top: 25px;
+}
+
+
+.topmenu {
+    color: rgb(246, 242, 242);
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#mailId{
+    margin-top: 5px;
+}
+.topmenu:hover {
+    color: white;
+}
+
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+}
+
+.profile_name {
+    float: left;
+    padding-left: 2cm;
+}
+
+.contact_info {
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.contact_info img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Titles */
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #50740e;
+    margin: 30px 60px 0px;
+}
+
+.introduction {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0 20px;
+    animation-duration: 5s;
+}
+
+/* About Me */
+
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#about-me h1 {
+    font-size: 50px;
+    color: #365005;
+    margin: 30px 0;
+}
+
+#about-me p {
+    font-size: 25px;
+    color: rgb(231, 227, 227);
+    max-width: 1000px;
+    margin: -1cm auto;
+}
+
+
+
+/* Skills */
+.all_skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.skill-para{
+    font-size: small;
+    margin-top: -30px;
+    padding-top: -1px;
+}
+.skill {
+    border: 1px solid rgb(28, 40, 3);
+    border-radius: 6px;
+    text-align: center;
+    margin: 7px;
+    width: 205px;
+    height: 130px;
+    font-size: 30px;
+    box-shadow: 0 3px 10px rgb(42, 47, 7);
+    transition: transform 0.3s;
+    color: rgb(223, 219, 219);
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Projects */
+.projects-container {
+    margin: 30px 60px;
+}
+
+.projects-container hr {
+    border: 1px solid rgb(136, 213, 36);
+    width: 55%;
+    margin: 20px auto;
+}
+
+.project-card {
+    margin: 15px;
+    padding: 5px;
+    color: rgb(223, 219, 219);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(50, 65, 2);
+}
+
+.project-card h3 {
+    font-size: 28px;
+    color: rgb(68, 121, 121);
+}
+
+.project-card li {
+    font-size: 18px;
+    color: rgb(223, 219, 219);
+}
+#certificates{
+    font-size: 22px;
+
+}
+.cert-link{
+    color: rgb(59, 128, 149);
+}
+#education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    font-size: 25px;
+    color: rgb(223, 219, 219);
+    background-color: rgb(17, 26, 0);
+    padding: 30px;
+
+}
+#certificates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    font-size: 25px;
+    background-color: rgb(17, 26, 0);
+    color: rgb(223, 219, 219);
+    padding: 30px;
+}
+/* Recommendations */
+.all_recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.recommendation {
+    font-style: italic;
+    text-align: left;
+    width: 350px;
+    padding: 1rem;
+    background-color: #4d4a4a;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px gray;
+    margin: 10px;
+    border: 1px solid rgb(36, 75, 1);
+    font-size: 18px;
+    color: black;
+}
+
+.recommendation span {
+    color: #7600bc;
+    font-size: 20px;
+}
+
+/* Scroll to Top Button */
+.iconbutton {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #7600bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.iconbutton:hover {
+    background-color: #5a0096;
+}
+
+/* Form Pop-up */
+.popup {
+    width: 400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+    visibility: hidden;
+    padding: 20px;
+    box-shadow: 0 3px 10px gray;
+}
+
+.popup button {
+    background-color: white;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.popup button:hover {
+    background-color: #7600bc;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+    background-color: rgb(59, 89, 3);
+    border: 1px solid #7abc00;
+    color: #efe8f4;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0s;
+}
+
+button:hover {
+    background-color: #33273a;
+    color: white;
+}
+
+
+#text_area{
+    width: 500px;
+    height: 70px;
+}
